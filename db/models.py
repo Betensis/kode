@@ -8,6 +8,7 @@ class TrainStation(peewee.Model):
     id = IntegerField(
         unique=True,
         primary_key=False,
+        index=True,
     )
     station = CharField()
     line = IntegerField()
